@@ -2,10 +2,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-// root path
-app.get('/', (req, res) => {
-    res.send('hello world')
-})
+require('./routes')(app)
 
 // server main listener
 app.listen(port, () => {
