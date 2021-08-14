@@ -8,7 +8,8 @@ frontend: react
 - server
     - cd server
     - npm install
-    - node start
+    - node seed.js
+    - node index.js
 - client
     - cd client
     - npm install
